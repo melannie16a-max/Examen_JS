@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoStock</title>
+</head>
+<body>
+    <header>
+    <h1>TecnoStock</h1>
+    <div class="cart-summary-badge" id="cart-badge">0 unidades</div>
+    </header>
+
+    <main>
+        <div id="status-container"></div>
+
+        <!-- Filtros de busqueda-->
+         <section class="filters-section">
+            <input type="text" id="search-input" placeholder="Buscar por nombre o descripcion...">
+
+            <select id="category-select">
+            <option value="">Todas las categorias</option>
+            </select>
+
+            <label>
+                <input type="checkbox" id="only-available-check">
+                solo disponibles:
+            </label>
+
+            <select id="sort-select">
+                <option value="">ordenar por precio</option>
+                <option value="asc">Precio: Menor a Mayor</option>
+                <option value="desc">Precio: Mayor a Menor</option>
+            </select>
+
+            <button id="clear-filters-btn" class="btn-secondary">Limpiar filtros</button>
+         </section>
+
+         <!--Contenido princial-->
+         <section class="layout-grid">
+            <section>
+                <product-list></product-list>
+            </section>
+
+            <aside>
+                <shopping-cart></shopping-cart>
+            </aside>
+         </section>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

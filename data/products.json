@@ -1,0 +1,9 @@
+{
+  "id": 101,
+  "name": "Teclado mecánico",
+  "category": "Perifericos",
+  "price": 189900,
+  "stock": 8,
+  "description": "Teclado USB para uso diario",
+  "active": true
+}
